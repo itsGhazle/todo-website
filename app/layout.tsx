@@ -3,7 +3,8 @@ import "./globals.css";
 import { iranyekanXpro } from "@/app/assets/fonts";
 
 export const metadata: Metadata = {
-  title: "to do app",
+  title: "To Do App",
+  description: "A simple to do app built with Next.js and Tailwind CSS",
 };
 
 export default function RootLayout({
