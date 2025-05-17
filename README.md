@@ -1,8 +1,36 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Todo Website
 
-## Getting Started
+This is a simple Todo List application developed using Next.js, React, and TypeScript. Users can add, delete, and manage their tasks.
 
-First, run the development server:
+## Features
+
+- Add and delete tasks
+- Manage task statuses (not started, in progress, completed)
+- Data storage in browser's localStorage
+- Responsive user interface with Tailwind CSS
+- Persian language support
+- Form validation using React Hook Form and Zod
+
+## Installation and Setup
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/your-username/todo-website.git
+cd todo-website
+```
+
+2. Install dependencies:
+
+```bash
+npm install
+# or
+yarn install
+# or
+pnpm install
+```
+
+3. Run the development server:
 
 ```bash
 npm run dev
@@ -10,27 +38,30 @@ npm run dev
 yarn dev
 # or
 pnpm dev
-# or
-bun dev
+
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+4. Open your browser and go to [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## How to Use
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+1. **Sign up and Login**: First, create a user account on the signup page and then login.
 
-## Learn More
+2. **Add a New Task**: On the main page, use the form to add a new task.
 
-To learn more about Next.js, take a look at the following resources:
+3. **Manage Tasks**: In the task list, you can:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+   - Change task status (not started, in progress, completed)
+   - Delete tasks
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+4. In the dashboard, view overall task statistics such as the number of completed and in-progress tasks.
 
-## Deploy on Vercel
+## Technologies
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- **Next.js**
+- **React**
+- **TypeScript**
+- **Tailwind CSS**
+- **React Hook Form**
+- **Zod**
+- **localStorage**
