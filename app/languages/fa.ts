@@ -30,9 +30,9 @@ export const fa = {
     logout: "خروج",
   },
   STATISTICS: {
-    title: "آمار",
+    title: "مدیریت تسک ها",
     totalTasks: "تعداد کل تسک‌ها",
-    completedTasks: "تسک‌های تکمیل شده",
+    completedTasks: " تعداد تسک‌های تکمیل شده",
     username: "نام کاربری",
   },
   TASK_LIST: {
@@ -55,5 +55,5 @@ export const fa = {
     action: "عملیات",
     status: "وضعیت",
   },
-  ADD_TASK: "افزودن تسک",
+  ADD_TASK: "افزودن تسک جدید",
 };
