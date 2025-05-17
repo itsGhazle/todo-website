@@ -13,12 +13,7 @@ This is a simple Todo List application developed using Next.js, React, and TypeS
 
 ## Installation and Setup
 
-1. Clone the repository:
-
-```bash
-git clone https://github.com/your-username/todo-website.git
-cd todo-website
-```
+1. Clone the repository
 
 2. Install dependencies:
 
