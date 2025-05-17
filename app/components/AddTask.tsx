@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import { useTaskContext } from "@/app/context/TaskContext";
 import { fa } from "@/app/languages/fa";
 import Button from "@/app/ui/Button";
+import TextField from "@/app/ui/TextField";
 import DatePicker, { DateObject } from "react-multi-date-picker";
 import persian from "react-date-object/calendars/persian";
 import persian_fa from "react-date-object/locales/persian_fa";
@@ -28,7 +29,7 @@ export default function AddTask() {
 
     addTask({
       name: name.trim(),
-      date: date.toString() || "",
+      date: date!.toString(),
       status: { _tag: "not_started" },
     });
 
@@ -42,24 +43,19 @@ export default function AddTask() {
       <h2 className="text-base font-semibold mb-4">{fa.ADD_TASK}</h2>
 
       {error && (
-        <div className="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded mb-4">
+        <div className="bg-red-100 border border-red-400 text-red-700 text-xs px-2 py-1 rounded mb-4">
           {error}
         </div>
       )}
 
       <form onSubmit={handleSubmit} className="space-y-4">
-        <div>
-          <label htmlFor="name" className="block text-gray-700 mb-1">
-            {fa.TASK.name}
-          </label>
-          <input
-            type="text"
-            id="name"
-            value={name}
-            onChange={(e) => setName(e.target.value)}
-            className="w-full p-2 border border-gray-300 rounded"
-          />
-        </div>
+        <TextField
+          label={fa.TASK.name}
+          id="name"
+          type="text"
+          value={name}
+          onChange={(e) => setName(e.target.value)}
+        />
 
         <div>
           <label htmlFor="date" className="block text-gray-700 mb-1">

@@ -13,6 +13,7 @@ import { useRouter } from "next/navigation";
 import Link from "next/link";
 import { fa } from "@/app/languages/fa";
 import Button from "@/app/ui/Button";
+import Input from "@/app/ui/Input";
 
 export default function LoginForm() {
   const [error, setError] = useState("");
@@ -52,35 +53,21 @@ export default function LoginForm() {
       )}
 
       <form onSubmit={handleSubmit(onSubmit)}>
-        <div className="mb-4">
-          <label htmlFor="username" className="block text-gray-700 mb-2">
-            {fa.USERNAME}
-          </label>
-          <input
-            type="text"
-            id="username"
-            {...register("username")}
-            className="w-full p-2 border rounded-md"
-          />
-          {errors.username && (
-            <p className="text-red-500 mt-1">{errors.username.message}</p>
-          )}
-        </div>
+        <Input
+          label={fa.USERNAME}
+          id="username"
+          type="text"
+          {...register("username")}
+          error={errors.username}
+        />
 
-        <div className="mb-6">
-          <label htmlFor="password" className="block text-gray-700 mb-2">
-            {fa.PASSWORD}
-          </label>
-          <input
-            type="password"
-            id="password"
-            {...register("password")}
-            className="w-full p-2 border rounded-md"
-          />
-          {errors.password && (
-            <p className="text-red-500 mt-1">{errors.password.message}</p>
-          )}
-        </div>
+        <Input
+          label={fa.PASSWORD}
+          id="password"
+          type="password"
+          {...register("password")}
+          error={errors.password}
+        />
 
         <Button type="submit" className="w-full">
           {fa.LOGIN.title}

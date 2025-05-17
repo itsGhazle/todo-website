@@ -52,7 +52,7 @@ export default function TaskList() {
   }
 
   return (
-    <div className="bg-white rounded-lg shadow overflow-x-scroll">
+    <div className="bg-white rounded-lg shadow overflow-x-auto overflow-y-auto">
       <TaskViewTable
         tasks={tasks}
         getStatusColor={getStatusColor}
