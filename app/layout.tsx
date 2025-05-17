@@ -14,9 +14,9 @@ export default function RootLayout({
   return (
     <html lang="fa" dir="rtl">
       <body
-        className={`h-full w-full text-stone-900 ${iranyekanXpro.className}`}
+        className={`h-screen w-screen text-stone-900 ${iranyekanXpro.className}`}
       >
-        {children}
+        <main className="min-h-screen w-screen">{children}</main>
       </body>
     </html>
   );

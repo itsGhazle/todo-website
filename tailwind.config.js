@@ -6,22 +6,14 @@ module.exports = {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    extend: {
-      colors: {
-        primary: {
-          50: "#E1E8EF",
-          100: "#D4DEE7",
-          200: "#B7C7D7",
-          300: "#99B0C7",
-          400: "#7C99B6",
-          500: "#5E82A6",
-          600: "#4C6B8A",
-          700: "#3C546C",
-          800: "#2C3D4F",
-          900: "#1B2631",
-          950: "#141C24",
-        },
-      },
+    colors: {
+      main_background: "#F5F0EB",
+      error: "#F54C3F",
+      success: "#27C196",
+      link: "#3374CD",
+    },
+    fontFamily: {
+      sans: ["iransansxv"],
     },
   },
   plugins: [],
